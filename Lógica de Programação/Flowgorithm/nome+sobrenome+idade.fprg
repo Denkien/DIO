@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-02 07:31:56 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtTTlBRE9WRzsyMDIyLTAyLTAyOyIwNjoxMTo0NSAiOzI4NzA="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtTTlBRE9WRzsyMDIyLTAyLTAyOyIwNzozMTo1NiAiOzE7Mjk4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;quantos anos vc tem?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;qual seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;qual seu sobrenome?&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;seu nome completo &#233; &quot; &amp; nome &amp; sobrenome &amp; &quot;. &quot; &amp; &quot;vc tem &quot; &amp; idade &amp; &quot;anos&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

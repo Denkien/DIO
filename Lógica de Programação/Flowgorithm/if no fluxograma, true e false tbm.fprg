@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-02 04:49:14 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtTTlBRE9WRzsyMDIyLTAyLTAyOyIwNDo0MjozNSAiOzI4NzE="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtTTlBRE9WRzsyMDIyLTAyLTAyOyIwNDo0OToxNCAiOzI7Mjk4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente, numero" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;sem cart&#227;o n&#227;o tem como&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

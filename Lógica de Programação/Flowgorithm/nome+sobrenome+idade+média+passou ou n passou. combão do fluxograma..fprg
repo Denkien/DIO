@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-02 07:39:54 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtTTlBRE9WRzsyMDIyLTAyLTAyOyIwNjoxMTo0NSAiOzI4NzA="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtTTlBRE9WRzsyMDIyLTAyLTAyOyIwNzozOTo1NCAiOzI7Mjk5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;quantos anos vc tem?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;qual seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;qual seu sobrenome?&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;digite sua primeira nota&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;digite sua segunda nota&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;digite sua terceira nota&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;digite sua quarta nota&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="&quot;seu nome completo &#233; &quot; &amp; nome &amp; sobrenome &amp; &quot;. &quot; &amp; &quot;vc tem &quot; &amp; idade &amp; &quot; anos&quot; &amp; &quot; e sua m&#233;dia &#233; &quot; &amp; media" newline="True"/>
+            <if expression="media &gt;=6">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, vc passou&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;se lascou, vc n passou&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
