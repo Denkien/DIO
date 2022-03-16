@@ -1,0 +1,116 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/*elementos base*/
+body{
+    background:var(--preta);
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family:"Arial Black", Times;
+    font-size:40px ;
+    margin-left:5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+
+/*filme principal*/
+
+.filme-principal{
+    font-size:15px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/img/op0.jpg");
+    
+    height:100%;
+    width:100%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top:5%;
+    margin-bottom: 50px;
+    font-size:150%;
+}
+
+.titulo{
+    margin-top:20%;
+    font-size:60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:white;
+    border-radius:6%;
+    padding:10px 20px;
+    margin-right: 15px;
+    font-size:12px;
+    margin-bottom:100px;
+
+    cursor:pointer;
+    transition:.25s ease all;
+}
+
+.botao:hover{
+    background-color:rgba(255, 255, 255, 0.65);
+    color:black;
+}
+
+.botao i{
+    margin-right: 10px;
+
+}
+ 
+.container{
+    margin-left: 1.5%;
+    margin-right:1%;
+}
+
+.filme-principal .container{
+    width: 50%;
+}
+
+.box-filme{
+    height: 100%; /*100% fica melhor se as imagens estiverem do mesmo tamanho*/
+    width:100%;
+    display: block;
+    
+}
+
+.carrossel-filmes{
+    margin-top: 0;
+}
